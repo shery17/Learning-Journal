@@ -1,0 +1,162 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #151515;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+/* header */
+
+header {
+    background-color: white;
+    padding: 0.5rem 0;
+}
+
+header h2 {
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #0E0E0E;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+header a {
+    text-decoration: none;
+    color: #0E0E0E;
+}
+
+.logo {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.25rem;
+}
+
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* blog-section-1 */
+
+.blog-section-1 {
+    margin-top: 2rem;
+}
+
+.blog-section-1 time {
+    color: #151515;
+    font-size: 0.75rem;
+}
+
+.blog-section-1 h1 {
+    font-size: 2.2rem;
+    color: #151515;
+    font-weight: bold;
+}
+
+/* blog-section-2 */
+
+.blog-section-2 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* blog-section-3 */
+
+.blog-section-3-grid {
+    display: grid;
+    grid-template: repeat(6, 1fr);
+}
+
+.blog-section-3 img {
+    display: block;
+    width: 100%;
+}
+
+.blog-section-3 time {
+    display: block;
+    margin-top: 1rem;
+}
+
+/* footer */
+
+footer {
+    color: white;
+    background-color: #202020;
+    padding: 4rem;
+    margin-top: 2rem;
+}
+
+footer h4, footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* utility */
+
+.display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.margin-bottom-2rem {
+    margin-bottom: 2rem;
+}
+
+.margin-sides-1rem {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+@media (min-width: 600px) {
+    .blog-section-3-grid {
+        grid-template: 1fr / 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    header.margin-sides-1rem {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    main.margin-sides-1rem {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .blog-section-1 time, .blog-section-1 h1, .blog-section-1 p{
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+
+    .blog-section-2 {
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+
+    .blog-section-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-section-1 h1, .blog-section-1 p {
+        margin: 1rem 1.5rem;
+    }
+}
