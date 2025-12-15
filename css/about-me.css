@@ -9,6 +9,15 @@ p {
     line-height: 1.5rem;
 }
 
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+}
+
 /* header */
 
 header {
@@ -25,7 +34,7 @@ header h2 {
 
 header li {
     display: inline-block;
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-size: 0.75rem;
     font-weight: 600;
 }
